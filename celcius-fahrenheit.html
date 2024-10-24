@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celcius-Fahrenheit</title>
+</head>
+<body>
+  <script>
+    function convertTemperature(degree, unit) {
+      if (unit === 'F') {
+        fahrenheit = (degree * 9 / 5) + 32;
+        console.log(`Temperature: ${fahrenheit} Fahrenheit`);
+
+      } else if (unit === 'C') {
+        celcius = (degree - 32) * 5 / 9;
+        console.log(`Temperature: ${celcius} Celcius`);
+
+      } else {
+        console.log('Invalid input')
+      }
+    }
+
+    convertTemperature(25, 'F');
+    convertTemperature(77, 'C');
+
+  </script>
+</body>
+</html>

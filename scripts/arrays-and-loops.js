@@ -110,7 +110,7 @@ while (i <= 10) {
 for (i = 1; i <= 10; i++) {
   console.log(i)
 }
-
+*/
 
 
 
@@ -119,6 +119,7 @@ const nums = [9, 20, 30, 40, 75];
 nums[2] = 99;
 console.log(`Array: ${nums}`);
 
+//Get last array value
 function getLastValue(array) {
   const lastValue = array[array.length - 1];
   console.log(`Last value: ${lastValue}`);
@@ -126,6 +127,8 @@ function getLastValue(array) {
 
 getLastValue(nums);
 
+
+//Swap array values
 function arraySwap(array) {
   let firstValue = array[0];
   array[0] = array[array.length - 1];
@@ -134,4 +137,3 @@ function arraySwap(array) {
 }
 
 arraySwap(nums);
-*/
